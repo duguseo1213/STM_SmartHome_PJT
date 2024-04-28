@@ -1,0 +1,322 @@
+{
+  "Application": {
+    "Screens": [
+      {
+        "Name": "Screen1",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 58,
+              "Green": 45,
+              "Blue": 138
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Temperature",
+            "X": 33,
+            "Y": 154,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_invert_colors_50_50_E8F6FB.svg.png",
+            "IconX": 63,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Power",
+            "X": 33,
+            "Y": 64,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_active.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "IconPressed": "__generated\\icon_theme_images_action_power_settings_new_40_40_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_power_settings_new_40_40_E8F6FB.svg.png",
+            "IconX": 68,
+            "IconY": 7,
+            "IconHeight": 40,
+            "IconWidth": 40
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "Curtain",
+            "X": 33,
+            "Y": 240,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_thumb_up_off_alt_50_50_E8F6FB.svg.png",
+            "IconX": 62,
+            "IconHeight": 50,
+            "IconWidth": 50
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "go_temp",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Temperature"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "East",
+              "ActionComponent": "Screen2"
+            }
+          },
+          {
+            "InteractionName": "toggle_curtain",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "Curtain"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "toggle_curtain"
+            }
+          }
+        ]
+      },
+      {
+        "Name": "Screen2",
+        "Components": [
+          {
+            "Type": "Box",
+            "Name": "box1",
+            "Width": 240,
+            "Height": 320,
+            "Color": {
+              "Red": 58,
+              "Green": 45,
+              "Blue": 138
+            }
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "tempup",
+            "X": 33,
+            "Y": 28,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_thumb_up_off_alt_50_50_E8F6FB.svg.png",
+            "IconX": 61,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "tempdown",
+            "X": 33,
+            "Y": 187,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_action_thumb_down_off_alt_50_50_E8F6FB.svg.png",
+            "IconX": 61,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "ButtonWithIcon",
+            "Name": "mainmenu",
+            "X": 33,
+            "Y": 256,
+            "Width": 175,
+            "Height": 50,
+            "Pressed": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "Released": "__generated\\alternate_theme_images_widgets_button_regular_height_50_small_round_action.png",
+            "IconPressed": "__generated\\icon_theme_images_action_done_50_50_E8F6FB.svg.png",
+            "IconReleased": "__generated\\icon_theme_images_hardware_keyboard_backspace_50_50_E8F6FB.svg.png",
+            "IconX": 62,
+            "IconHeight": 50,
+            "IconWidth": 50
+          },
+          {
+            "Type": "TextArea",
+            "Name": "TX",
+            "X": 165,
+            "Y": 102,
+            "Width": 26,
+            "Height": 24,
+            "TextId": "__SingleUse_AWFL",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 33,
+              "Green": 209,
+              "Blue": 39
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "TXbuffer",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "nowtemp",
+            "X": 165,
+            "Y": 140,
+            "Width": 26,
+            "Height": 24,
+            "TextId": "__SingleUse_8ZHO",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 33,
+              "Green": 209,
+              "Blue": 39
+            },
+            "AutoSize": true,
+            "Wildcard1": {
+              "TextId": "NWbuffer",
+              "UseBuffer": true,
+              "BufferSize": 15
+            }
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1",
+            "X": 51,
+            "Y": 102,
+            "Width": 108,
+            "Height": 24,
+            "TextId": "__SingleUse_1G6O",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 33,
+              "Green": 209,
+              "Blue": 39
+            },
+            "AutoSize": true
+          },
+          {
+            "Type": "TextArea",
+            "Name": "textArea1_1",
+            "X": 49,
+            "Y": 140,
+            "Width": 112,
+            "Height": 24,
+            "TextId": "__SingleUse_PQUD",
+            "TextRotation": "0",
+            "Color": {
+              "Red": 33,
+              "Green": 209,
+              "Blue": 39
+            },
+            "AutoSize": true
+          }
+        ],
+        "Interactions": [
+          {
+            "InteractionName": "go_main",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "mainmenu"
+            },
+            "Action": {
+              "Type": "ActionGotoScreen",
+              "ScreenTransitionType": "ScreenTransitionSlide",
+              "ScreenTransitionDirection": "West",
+              "ActionComponent": "Screen1"
+            }
+          },
+          {
+            "InteractionName": "temp_up",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tempup"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "temp_up"
+            }
+          },
+          {
+            "InteractionName": "temp_down",
+            "Trigger": {
+              "Type": "TriggerClicked",
+              "TriggerComponent": "tempdown"
+            },
+            "Action": {
+              "Type": "ActionCustom",
+              "FunctionName": "temp_down"
+            }
+          }
+        ]
+      }
+    ],
+    "CustomContainerDefinitions": [],
+    "Name": "MyApplication",
+    "Resolution": {
+      "Width": 240,
+      "Height": 320
+    },
+    "SelectedColorDepth": 16,
+    "StartupScreenName": "Screen1",
+    "SelectedStartupLanguage": "GB",
+    "TouchGfxPath": "../Middlewares/ST/touchgfx",
+    "UIPath": ".",
+    "AvailableColorDepths": [
+      16
+    ],
+    "AvailableLCDs": {
+      "16": "LCD16bpp"
+    },
+    "AvailableSections": [
+      "ExtFlashSection",
+      "IntFlashSection"
+    ],
+    "AvailableResolutions": [
+      {
+        "Width": 240,
+        "Height": 320
+      }
+    ],
+    "PhysicalButtons": [],
+    "FrameworkFeatures": {
+      "LCD16bpp": {
+        "Id": "LCD16bpp",
+        "IsEnabled": true
+      }
+    },
+    "GenerateAssetsCommand": "make -f simulator/gcc/Makefile assets -j8",
+    "PostGenerateCommand": "touchgfx update_project --project-file=simulator/msvs/Application.vcxproj",
+    "PostGenerateTargetCommand": "touchgfx update_project",
+    "CompileSimulatorCommand": "make -f simulator/gcc/Makefile -j8",
+    "RunSimulatorCommand": "build\\bin\\simulator.exe",
+    "LandscapeSkinX": 0,
+    "LandscapeSkinY": 0,
+    "PortraitSkinX": 0,
+    "PortraitSkinY": 0,
+    "DisplayOrientation": "Portrait",
+    "Family": "STM32F4",
+    "SubFamily": "STM32F429/439",
+    "Toolchain": "STM32CubeIDE",
+    "Platform": "m4",
+    "ProjectFile": "../GUI_LED.ioc",
+    "OptionalComponentsRoot": "../Middlewares/ST/touchgfx_components",
+    "OptionalComponents": [],
+    "AdditionalFeatures": [
+      "CWRVector",
+      "VectorFonts"
+    ]
+  },
+  "Version": "4.23.2"
+}
