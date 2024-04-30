@@ -4,4 +4,16 @@
 
 ## 개요
 
-## 기술 스택
+##
+### STM Board
+```
+STM32CubeIDE 1.15.0
+Touch GFX 4.23.0
+```
+### RaspberryPI5
+```
+python 3.8
+pyserial
+pyqt
+pymysql
+```
